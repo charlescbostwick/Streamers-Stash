@@ -1,0 +1,70 @@
+Software Design Document
+Streamer's Stash: Inventory Management System
+System Architecture:
+Backend: Django, using its ORM with PostgreSQL for database operations.
+Frontend: React (for web/desktop), later React Native (for mobile).
+Hosting: Self-hosted on a zimaboard.
+API: Amazon Product Advertising API.
+Data Model:
+Product:
+ID: Auto-incremental primary key.
+Name: String
+ASIN (Amazon Standard Identification Number): Unique identifier for products on Amazon.
+Description: Text
+Purchase Date: Date
+Image: ImageField (for uploaded product pictures)
+Amazon Link: URL
+Status (on sale, normal): ChoiceField
+Backend Features:
+API Endpoints:
+Add item
+Update item
+Delete item
+List all items
+Query Amazon to see which items are on sale/movers and shakers.
+Integrate with Amazon Product Advertising API: This requires registration and authentication. The integration will be used to periodically check if an item is on sale or in the movers and shakers list.
+Frontend Features:
+GUI/Web Interface: Use React for a responsive, modern, single-page application feel.
+Main Views:
+Dashboard: Display a list of all items, with icons indicating if they're on sale or on the movers and shakers list.
+Add Item Form: Fields corresponding to the Product data model.
+Edit Item Form: Similar to Add Item but pre-filled with existing product info.
+Delete Confirmation Dialog: To ensure users don't delete items accidentally.
+Dynamic Features:
+"On Sale" Filter: Instantly filters items that are on sale.
+Search Bar: Searches product based on Name or ASIN.
+Movers and Shakers Highlight: Perhaps a distinct border or highlight for items on this list.
+Implementation:
+Database Setup:
+Use PostgreSQL as the database.
+Django ORM will handle migrations and schema.
+Backend Development:
+Set up Django projects and apps.
+Create models based on data models.
+Create API views using the Django REST framework.
+Integrate Amazon API, maybe with a scheduled task (like Celery) to regularly update item statuses.
+Frontend Development:
+Initialize React project.
+Design components based on the main views.
+Use libraries like Axios to communicate with the backend API.
+Implement dynamic features.
+Hosting & Deployment:
+Set up Zimaboard with necessary software (e.g., Docker, Nginx).
+Containerize the Django app and the PostgreSQL database using Docker.
+Deploy the containerized applications on the zimaboard.
+Use Nginx as a reverse proxy to serve the Django app.
+Testing:
+Unit tests: Test individual components of the application (models, views, etc.)
+Integration tests: Test the entire system as a whole, e.g., adding an item, checking its status on Amazon.
+User acceptance testing: Get feedback from the influencer on the functionality and UX of the software.
+React Native Development: After the desktop/web version is stable, start porting to a mobile version using React Native.
+Security & Best Practices:
+Ensure secure storage of API keys (consider Django's secrets or environment variables).
+Implement rate-limiting for the API to avoid abuse.
+Ensure safe and secure connections (consider HTTPS).
+Regular backups of the PostgreSQL database.
+Follow Django and React best practices for secure coding.
+Future Enhancements:
+Analytics: Show which products have been most popular or profitable.
+Integration with other affiliate platforms for broader reach.
+Recommendations based on trends to suggest products to add to inventory.
