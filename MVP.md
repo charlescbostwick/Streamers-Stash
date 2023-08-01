@@ -1,18 +1,56 @@
-MVP Software Requirements Specification
+# Streamer's Stash MVP
 
-##1. Introduction 
+## 1. System Architecture:
 
-  ###1.1 Purpose The MVP will focus on essential inventory management using Django and Python and interfacing with Amazon using the Amazon Product Advertising API. It will also involve the creation of a basic cross-platform mobile app using React Native.
+- **Backend**: Django (with PostgreSQL)
+- **Frontend**: React (web/desktop)
+- **Hosting**: Self-hosted on a zimaboard
 
-  ###1.2 Scope The system will manage the inventory and provide basic analytics from Amazon.
+## 2. Data Model:
 
-##2. System Features
+### Product:
 
-  ###2.1 Inventory Management
-    - Add Item. 
-    - Update Item.
-    - Delete Item. 
-  
-  ###2.2 Amazon Basic Analytics
-    - Trend Analysis. 
-    - Sales Analysis.
+- ID: Auto-incremental primary key
+- Name: String
+- ASIN: Unique Amazon identifier
+- Amazon Link: URL
+- Status: ChoiceField (on sale, normal)
+
+## 3. Essential Backend Features:
+
+### API Endpoints:
+
+- Add item
+- Update item
+- Delete item
+- List all items
+
+### Integration:
+
+- Basic integration with the Amazon Product Advertising API for item status.
+
+## 4. Essential Frontend Features:
+
+### GUI/Web Interface:
+
+#### Main Views:
+
+- **Dashboard**: List of all items with status icons
+- **Add Item Form**: Fields for adding products
+- **Edit Item Form**: Pre-filled form for updating products
+
+#### Dynamic Features:
+
+- On Sale filter
+- Search bar based on product name or ASIN
+
+## 5. Simplified Implementation:
+
+- Set up a PostgreSQL database and Django ORM
+- Backend development using Django
+- Frontend development using a basic React template
+
+## 6. Basic Security:
+
+- Secure storage of API keys using environment variables
+- HTTPS for secure connections (can use Let's Encrypt for a free certificate)
