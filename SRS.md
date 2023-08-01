@@ -1,94 +1,89 @@
-#Software Requirements Specification for Inventory and Trend Analysis System
+# Software Requirements Specification for Streamer's Stash System
 
-##1. Introduction
-   
-###1.1 Purpose
-The purpose of this document is to provide a detailed description of the requirements for the "Inventory and Trend Analysis System" that will assist the user in managing home inventory and analyzing Amazon's product trends.
+## 1. Introduction:
 
-###1.2 Scope
-The system will manage the user's inventory, provide location tracking, and interface with Amazon using the Amazon Product Advertising API. The system will have a web interface and a cross-platform mobile app built using React Native.
+### 1.1 Purpose:
 
-###1.3 Definitions and Acronyms
-- ORM: Object Relational Mapping
-- API: Application Programming Interface
-- MVP: Minimum Viable Product
-- ASIN: Amazon Standard Identification Number
-  
-##2. Overall Description
+This document provides a detailed description of the requirements for the "Streamer's Stash System." The system is crafted for social media influencers, primarily on the Amazon platform, to manage their product inventory and analyze trends on Amazon efficiently.
 
-###2.1 Product Perspective
-The system is intended to be a standalone application hosted on a Zimaboard. The backend is built using Django, interfacing with a PostgreSQL database and Python for business logic. The front end is developed in React Native for cross-platform mobile accessibility.
+### 1.2 Scope:
 
-###2.2 Product Functions
-Inventory Management:
-- Input items.
-- List the location of items.
+The Streamer's Stash System is a comprehensive tool designed to enable Amazon platform influencers to track their product inventory, analyze Amazon trends, and quickly identify products on sale. It offers a web interface and a cross-platform mobile app developed with React Native. Future enhancements include expansion to other social media platforms.
+
+### 1.3 Definitions and Acronyms:
+
+- **ORM**: Object Relational Mapping
+- **API**: Application Programming Interface
+- **ASIN**: Amazon Standard Identification Number
+
+## 2. Overall Description:
+
+### 2.1 Product Perspective:
+
+The system will be a standalone application hosted on a Zimaboard. The backend uses Django, interfaces with a PostgreSQL database, and uses Python to manage business logic. The front end for the web interface is React, while the mobile application uses React Native for cross-platform accessibility.
+
+### 2.2 Product Functions:
+
+#### Inventory Management:
+- Add and input items.
+- Update item details.
+- Delete items from inventory.
+- List and locate items.
 - Generate periodic reports.
-- Amazon Analytics:
+
+#### Amazon Analytics:
 - Interface with Amazon Product Advertising API.
-- Query Amazon for items to see trending ones.
-- Find items on sale.
+- Analyze trends for users' products on Amazon.
+- Identify products on sale or on the "movers and shakers" list.
 
-##3. System Features
+## 3. System Features:
 
-###3.1 Inventory Management
+### 3.1 Inventory Management:
 
-  ####3.1.1 Add Item
-Users can add a new item with details: Name, ASIN, URL, Current Price, Location, Status, Date of Purchase, Warranty Info.
+#### 3.1.1 Add Item:
+Users can add a new item with the following details: Name, ASIN, URL, Current Price, Location, Status, Date of Purchase, and Warranty Info.
 
-  ####3.1.2 Update Item
-Users can modify any of the details of an item in the inventory.
+#### 3.1.2 Update Item:
+Allows users to modify any details of an item in their inventory.
 
-  ####3.1.3 Delete Item
-Users can remove an item from the inventory.
+#### 3.1.3 Delete Item:
+Permits users to remove an item from the inventory.
 
-  ####3.1.4 Generate Report
-Users can generate a report of all items filtered by their status or location.
+#### 3.1.4 Generate Report:
+Users can generate a report of all items filtered by status or location.
 
-###3.2 Amazon Analytics
+### 3.2 Amazon Analytics:
 
-  ####3.2.1 Trend Analysis
-The system will query Amazon for the user's items to determine trending ones.
+#### 3.2.1 Trend Analysis:
+The system will regularly query Amazon for the user's items to determine trending ones.
 
-  ####3.2.2 Sales Analysis
-The system will query Amazon for items on sale.
+#### 3.2.2 Sales Analysis:
+Identifies products that are currently on sale on Amazon.
 
-##4. Future Enhancements
-   
-###4.1 Data Analysis and Visualization
-- Data visualization using Chart.js, D3.js, Seaborn, and Plotly.
-- Advanced statistical analysis using Scipy and Statsmodels.
-- Machine learning analytics using Scikit-learn.
+## 4. Security Features:
 
-###4.2 Integration with Other Platforms
-Facebook
-Twitter
-Twitch.tv
-Instagram
-Patreon
-WordPress
-Pinterest
+- Secure storage of Amazon API credentials.
+- User interactions with the platform occur over secured channels (HTTPS).
 
-###4.3 Database Optimization
-Monitoring with Django Debug Toolbar.
-Database Indexing for optimized queries.
+## 5. Future Enhancements:
 
-###4.4 Cache & Performance
-Caching mechanisms with Redis.
-MVP Software Requirements Specification
+### 5.1 Data Analysis and Visualization:
+- Data visualization integration using Chart.js, D3.js, Seaborn, or Plotly.
+- Advanced statistical insights using Scipy and Statsmodels.
+- Machine learning analytics with Scikit-learn.
 
-##1. Introduction
-###1.1 Purpose
-The MVP will focus on essential inventory management using Django and Python and interfacing with Amazon using the Amazon Product Advertising API. It will also involve the creation of a basic cross-platform mobile app using React Native.
+### 5.2 Integration with Other Platforms:
+- Facebook
+- Twitter
+- Twitch.tv
+- Instagram
+- Patreon
+- WordPress
+- Pinterest
 
-###1.2 Scope
-The system will manage the inventory and provide basic analytics from Amazon.
+### 5.3 Database Optimization:
+- Monitoring with Django Debug Toolbar.
+- Database Indexing for faster and optimized queries.
 
-##2. System Features
-###2.1 Inventory Management
-Add Item.
-Update Item.
-Delete Item.
-###2.2 Amazon Basic Analytics
-Trend Analysis.
-Sales Analysis.
+### 5.4 Cache & Performance:
+- Integrate caching mechanisms with Redis to enhance performance.
