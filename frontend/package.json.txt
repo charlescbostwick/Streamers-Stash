@@ -1,0 +1,17 @@
+{
+  "name": "streamers-stash-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-native": "0.65.1" // can change the version if needed...
+    // Add other dependencies here for the mobile app later once software MVP is done.
+  }
+}
