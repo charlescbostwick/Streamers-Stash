@@ -1,3 +1,26 @@
-20230802 - created a change log, started, futher worked the idea, using SQLite intitially for a slimmer trimmed down version that is serverless for the MVP.  Decided to go PWA for offline availability.
-  
-20230801 - conseptualized the project, started writing out a requirements sheet, brainstorming ideas, etc.  Decided to use python, django, postgreSQL...
+# Changelog
+
+## [2023-08-02]
+
+### Added
+
+- Created Dockerfiles to set up the development environment in Docker.
+- Fine-tuned initial documentation and requirements sheets.
+
+## [2023-08-01]
+
+### Added
+
+- Today, I spent time conceptualizing the Streamer's Stash System project, jotting down ideas, and outlining the scope. 
+- Basically, my wife streams on Amazon. I feel she spends a lot of time hunting down products we own on sale when preparing for her streams.
+- I want to reduce the time for her, so she has more time to focus on other things, and implement automation to her work flow while using data analysis to drive sales.
+- I began writing out the requirements sheet to define the project's purpose, features, and functionalities.
+- After careful consideration, I made the decision to use Python as the backend language, Django as the web framework, and PostgreSQL as the primary database for this ambitious project.
+
+### Changed
+
+- I expanded the project's scope to include cross-platform support, allowing users to access the system from various devices, such as PCs and mobile devices.
+
+## [Initial Commit]
+
+- I created the initial repository for the Streamer's Stash System on August 1, 2023.
