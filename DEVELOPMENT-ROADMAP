@@ -8,7 +8,7 @@ This development plan outlines the stages, tasks, and order of operations for th
 ## Phase 1: Setup and Environment Configuration
 
 ### 1. Setup Development Environment
-- Install necessary software: Python, Django, PostgreSQL, Node.js, React Native, etc.
+- Install necessary software: Python, Django, PostgreSQL(or SQLite), Node.js, React Native, etc.
 - Set up a virtual environment for Python.
 
 ### 2. Initialize Repositories
