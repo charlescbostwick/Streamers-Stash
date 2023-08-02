@@ -1,0 +1,25 @@
+# Tech Stack for Streamer's Stash System (add links later and links to in-repo)
+
+- **Frontend (User Interface):**
+  - React (for the mobile PWA)
+  - HTML, CSS, JavaScript (for the web application)
+
+- **Backend (Server-Side):**
+  - Python (with Django web framework)
+  - Django ORM (Object-Relational Mapping)
+  - Django Rest Framework (DRF) for API development
+
+- **Database:**
+  - SQLite (for local development and smaller-scale deployments)
+  - PostgreSQL (for larger-scale or production deployments)
+
+- **Containerization:**
+  - Docker for creating containerized environments
+
+- **Deployment:**
+  - Docker Compose for managing the deployment of multiple services (backend and frontend) together
+
+- **Progressive Web App (PWA) Features:**
+  - Service Workers for offline access and caching
+  - Web App Manifest for metadata and installation prompt
+  - Responsive design for cross-device compatibility
