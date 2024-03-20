@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Streamers Stash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Streamers Stash</title>
+    <link rel="stylesheet" href="global.css"> <!-- Include global styles -->
+    <link rel="stylesheet" href="AddItemForm.css"> <!-- Include AddItemForm styles -->
+    <link rel="stylesheet" href="EditItemForm.css"> <!-- Include EditItemForm styles -->
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <header class="header">
+        <div class="container">
+            <h1>Streamers Stash</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Sidebar content (navigation links, etc.) -->
+        </aside>
+
+        <main class="content">
+            <h2>Add Item</h2>
+            <div id="add-item-form"></div> <!-- AddItemForm component -->
+
+            <h2>Edit Item</h2>
+            <div id="edit-item-form"></div> <!-- EditItemForm component-->
+
+            <h2>Item List</h2>
+            <div id="item-list"></div> <!-- ItemList component-->
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer -->
+        </div>
+    </footer>
+
+    <script src="react.development.js"></script> <!-- Include React library -->
+    <script src="react-dom.development.js"></script> <!-- Include React DOM library -->
+    <script src="babel.min.js"></script> <!-- Include Babel for JSX transpilation -->
+    <script type="text/babel" src="AddItemForm.js"></script> <!-- Include AddItemForm component -->
+    <script type="text/babel" src="EditItemForm.js"></script> <!-- Include EditItemForm component -->
+    <script type="text/babel" src="ItemList.js"></script> <!-- Include ItemList component -->
+    <script type="text/babel" src="app.js"></script> <!-- Include main app script -->
 </body>
 </html>

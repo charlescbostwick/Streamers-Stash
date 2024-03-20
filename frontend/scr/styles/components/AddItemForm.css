@@ -1,0 +1,34 @@
+/* AddItemForm.css */
+.form-container {
+    background-color: #FFFFFF; /* White Background */
+    border: 1px solid #CCCCCC; /* Light Gray Border */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input-label {
+    color: #333333; /* Text Color */
+}
+
+.input-field {
+    background-color: #F5F5F5; /* Light Gray Background */
+    color: #333333; /* Text Color */
+    border: 1px solid #CCCCCC; /* Light Gray Border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.submit-button {
+    background-color: #3498DB; /* Accent Color 1 */
+    color: #FFFFFF; /* White Text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1E87D9; /* Darker Shade of Accent Color 1 */
+}

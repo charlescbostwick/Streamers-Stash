@@ -1,0 +1,52 @@
+/* global.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF; /* Light Blue Background */
+    color: #333333; /* Text Color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    background-color: #3498DB; /* Accent Color 1 */
+    color: #FFFFFF; /* White Text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #FFFFFF; /* White Background */
+    float: left;
+    padding: 20px;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 80%;
+    float: right;
+    padding: 20px;
+}
+
+.button {
+    background-color: #3498DB; /* Accent Color 1 */
+    color: #FFFFFF; /* White Text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1E87D9; /* Darker Shade of Accent Color 1 */
+}

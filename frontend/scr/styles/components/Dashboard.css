@@ -1,0 +1,37 @@
+/* Dashboard styles */
+.dashboard-container {
+    background-color: #F0F8FF; /* Light Blue Background */
+    color: #333333; /* Text Color */
+}
+
+/* Header styles */
+.header {
+    background-color: #3498DB; /* Accent Color 1 */
+    color: #FFFFFF; /* White Text */
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #FFFFFF; /* White Background */
+    color: #333333; /* Text Color */
+}
+
+/* Content area styles */
+.content {
+    background-color: #FFFFFF; /* White Background */
+    color: #333333; /* Text Color */
+}
+
+/* Button styles */
+.button {
+    background-color: #3498DB; /* Accent Color 1 */
+    color: #FFFFFF; /* White Text */
+}
+
+/* Input field styles */
+.input-field {
+    background-color: #FFFFFF; /* White Background */
+    color: #333333; /* Text Color */
+    border: 1px solid #CCCCCC; /* Light Gray Border */
+}
+
