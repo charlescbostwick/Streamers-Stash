@@ -1,5 +1,14 @@
 # Changelog
 
+## [2024-03-20]
+
+### Added
+
+- Today, I went through and deployed basic level templates for functionality of the system based on delivering the MVP. 
+- Setup Django, decided on using MongoDB for a noSQL database to track items instead.
+- Created initial style sheets, api service javascript, and other initial templates for the project.
+- started looking into ideas on integrating new concepts I have learned since last august through my uni studies so I can enhance project.
+
 ## [2023-08-02]
 
 ### Added
